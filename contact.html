@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Контакты - Юрист Бáртович А.Н.</title>
+	<meta name="description" content="Наше местоположение и контактые данные.">
+	<meta name="keywords" content="карта, адрес, телефон, email">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="stylesheet" type="text/css" href="css/iconsfont.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<script type="module">
+				import Header from '/js/Header.js';
+				let header = new Header();
+			</script>
+		</header>
+
+		<main class="mainContact">
+			<div class="map">
+				<div class="map__body">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acde7548aaf63c4fa41edc29a3c5b2380a31bb4b110858d1117cb9e6723fe9a6e&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=falce"></script>
+				</div>
+				<div class="map__label">
+					<ul class="map__list">
+						<li>+7 (924) 548-33-52</li>
+						<li>bartovichlawyer@gmail.com</li>
+						<li>Иркутск, ул. Киевская, д. 24, офис 403</li>
+					</ul>
+					<div class="map__social">
+						<a href="https://vk.com/bartovich38" target="_blank"><i class="icon-vk"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="contactFormBody container">
+				<form class="contactForm" action="">
+					<input class="contactForm__item" type="text" placeholder="Имя">
+					<input class="contactForm__item" type="tel" placeholder="Телефон">
+					<button class="contactForm__item">Перезвоните мне<i class="icon-phone"></i></button>
+				</form>
+				<p class="policy">политика в отношении <a href="#">обработки персональных данных</a></p>
+			</div>	
+		</main>
+
+		<footer>
+			<script type="module">
+				import Footer from '/js/Footer.js';
+				let footer = new Footer();
+			</script>
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
