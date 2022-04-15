@@ -12,7 +12,6 @@
 // })
 
 const form = document.querySelector('#ajax-contact');
-	console.log(form)
 	form.addEventListener('submit', formSend);
 
 	async function formSend(event) {
@@ -23,7 +22,7 @@ const form = document.querySelector('#ajax-contact');
 
 		if(error===0){
 			form.classList.add('_sending');
-			let response = await fetch('mail.php', {
+			let response = await fetch('../mail.php', {
 				method: 'POST',
 				body: formData
 			})
