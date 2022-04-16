@@ -1,7 +1,7 @@
 <?php
 
-	$recepient = "leeloo3m@yandex.ru";
-	$sitename = "bartovich.londort.ru";
+	$recepient = "landort@gmail.com";
+	$sitename = "bartovich.ru";
 
 	$name = $_POST['name'];
 	$phone = $_POST['tel'];
@@ -17,7 +17,7 @@
 
 	$message = "Имя: $name \nТелефон: $phone";
 
-	$pagetitle = "НОВАЯ ЗАЯВКА с сайта $sitename";
+	$pagetitle = "НОВАЯ ЗАЯВКА на консультацию с сайта $sitename";
 
 	mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"")
 
