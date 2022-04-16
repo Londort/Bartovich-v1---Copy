@@ -6,6 +6,7 @@ $(document).ready(function(){
 			data: $(this).serialize()
 		}).done(function() {
 			alert('Спасибо за заявку');
+			$('#ajax-contact').reset()
 		});
 		return false;
 	});
