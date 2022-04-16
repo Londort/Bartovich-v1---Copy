@@ -13,7 +13,7 @@
 
 const form = document.querySelector('#ajax-contact');
 	form.addEventListener('submit', formSend);
-
+console.log('test')
 	async function formSend(event) {
 		event.preventDefault();
 		let error = formValidate(form);
