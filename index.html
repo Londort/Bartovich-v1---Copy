@@ -31,8 +31,8 @@
 					<div class="form-message"></div>
 					<form class="indexForm" id="ajax-contact">
 						<p class="indexForm__text">Оставьте свой номер телефона и мы Вам перезвоним</p>
-						<input class="indexForm__item _req _name" name="name" type="text" placeholder="Имя" >
-						<input class="indexForm__item _req" name="tel" type="tel" placeholder="Телефон" >
+						<input class="indexForm__item _req _name" name="name" type="text" placeholder="Имя" maxlength="40" required>
+						<input class="indexForm__item _req" name="tel" type="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" required>
 						<button type="submit" class="indexForm__item">Перезвоните мне
 							<i class="icon-phone"></i>
 						</button>

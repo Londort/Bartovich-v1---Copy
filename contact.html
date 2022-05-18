@@ -41,9 +41,9 @@
 				</div>
 			</div>
 			<div class="contactFormBody container">
-				<form class="contactForm" action="">
-					<input class="contactForm__item" type="text" placeholder="Имя">
-					<input class="contactForm__item" type="tel" placeholder="Телефон">
+				<form class="contactForm" id="ajax-contact">
+					<input class="contactForm__item" type="text" placeholder="Имя" maxlength="40" required>
+					<input class="contactForm__item" type="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" required>
 					<button class="contactForm__item">Перезвоните мне<i class="icon-phone"></i></button>
 				</form>
 				<p class="policy">политика в отношении <a href="#">обработки персональных данных</a></p>
@@ -58,5 +58,6 @@
 		</footer>
 	</div>
 	<script src="js/script.js"></script>
+	<script src="js/mail.js"></script>
 </body>
 </html>
